@@ -9,16 +9,27 @@
     <script>
       // KamoMaterial Theme for Tailwind CSS
       tailwind.config = {
+        darkMode: 'class', // Enable dark mode class strategy
         theme: {
           extend: {
             colors: {
+              // Dark theme colors
               'primary-dark': '#1A1A1A',
               'surface-dark': '#222222',
+              'outline-dark': '#333333',
+              'on-primary-dark': '#FFFFFF',
+              'on-surface-dark': '#E0E0E0',
+              
+              // Light theme colors
+              'primary-light': '#FFFFFF',
+              'surface-light': '#F9FAFB', // gray-50
+              'outline-light': '#E5E7EB', // gray-200
+              'on-primary-light': '#111827', // gray-900
+              'on-surface-light': '#4B5563', // gray-600
+
+              // Accent colors
               'accent-orange': '#F97316',
               'accent-orange-dark': '#EA580C',
-              'on-primary': '#FFFFFF',
-              'on-surface': '#E0E0E0',
-              'outline': '#333333',
             },
             fontFamily: {
               sans: ['Poppins', 'sans-serif'],
@@ -40,11 +51,6 @@
     <style>
       body {
         font-family: 'Poppins', sans-serif;
-        background-color: #1A1A1A; /* primary-dark */
-        background-image: 
-            radial-gradient(circle at 25% 25%, rgba(249, 115, 22, 0.1) 0%, transparent 50%),
-            radial-gradient(circle at 75% 75%, rgba(249, 115, 22, 0.05) 0%, transparent 50%);
-        background-size: 400px 400px;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
@@ -70,7 +76,10 @@
       .shimmer-bg {
         position: relative;
         overflow: hidden;
-        background-color: #2C2C2C; /* Darker shimmer base */
+        background-color: #E5E7EB; /* Light mode base: gray-200 */
+      }
+      .dark .shimmer-bg {
+        background-color: #2C2C2C; /* Dark mode base */
       }
       .shimmer-bg::after {
         content: '';
@@ -79,12 +88,21 @@
         transform: translateX(-100%);
         background-image: linear-gradient(
           90deg,
+          rgba(255, 255, 255, 0) 0,
+          rgba(255, 255, 255, 0.2) 20%,
+          rgba(255, 255, 255, 0.5) 60%,
+          rgba(255, 255, 255, 0)
+        );
+        animation: shimmer 1.5s infinite;
+      }
+      .dark .shimmer-bg::after {
+         background-image: linear-gradient(
+          90deg,
           rgba(51, 51, 51, 0) 0,
           rgba(51, 51, 51, 0.2) 20%,
           rgba(51, 51, 51, 0.5) 60%,
           rgba(51, 51, 51, 0)
         );
-        animation: shimmer 1.5s infinite;
       }
       .material-symbols-outlined {
         font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
@@ -110,9 +128,9 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-Bq3N_yDu.js"></script>
+  <script type="module" crossorigin src="/assets/index-CxZ4ouFg.js"></script>
 </head>
-  <body class="bg-primary-dark text-on-primary">
+  <body class="bg-primary-light dark:bg-primary-dark text-on-primary-light dark:text-on-primary-dark">
     <div id="root"></div>
 </body>
 </html>
