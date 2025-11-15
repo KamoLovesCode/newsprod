@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="drawer-news-svgrepo-com.svg" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>news.kamocodes.xyz</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://js.puter.com/v2/"></script>
     <script>
       // KamoMaterial Theme for Tailwind CSS
       tailwind.config = {
@@ -27,9 +28,9 @@
               'on-primary-light': '#111827', // gray-900
               'on-surface-light': '#4B5563', // gray-600
 
-              // Accent colors
-              'accent-orange': '#F97316',
-              'accent-orange-dark': '#EA580C',
+              // Accent colors - Now dynamically controlled by CSS variables
+              'accent': 'var(--accent-color, #F97316)', 
+              'accent-dark': 'var(--accent-color-dark, #EA580C)',
             },
             fontFamily: {
               sans: ['Poppins', 'sans-serif'],
@@ -49,6 +50,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
 
     <style>
+      :root {
+        --glass-opacity: 0.15; /* Default for glass-morphism background opacity */
+        --blur-intensity: 25px; /* Default for backdrop-filter blur */
+        --accent-color: #F97316; /* Default accent orange */
+        --accent-color-dark: #EA580C; /* Default darker accent orange */
+      }
       body {
         font-family: 'Poppins', sans-serif;
         -webkit-font-smoothing: antialiased;
@@ -128,7 +135,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-CxZ4ouFg.js"></script>
+  <script type="module" crossorigin src="/assets/index-CvNCm0Zb.js"></script>
 </head>
   <body class="bg-primary-light dark:bg-primary-dark text-on-primary-light dark:text-on-primary-dark">
     <div id="root"></div>

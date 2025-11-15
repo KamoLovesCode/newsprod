@@ -1,0 +1,56 @@
+{
+  "Johannesburg": {
+    "current": {
+      "city": "Johannesburg",
+      "temperature": 24,
+      "condition": "Partly Cloudy",
+      "humidity": 65,
+      "windSpeed": "15 km/h"
+    },
+    "forecast": [
+      { "dayOfWeek": "Today", "highTemp": 26, "lowTemp": 18, "condition": "Partly Cloudy" },
+      { "dayOfWeek": "Mon", "highTemp": 27, "lowTemp": 19, "condition": "Sunny" },
+      { "dayOfWeek": "Tue", "highTemp": 25, "lowTemp": 17, "condition": "Showers" },
+      { "dayOfWeek": "Wed", "highTemp": 23, "lowTemp": 16, "condition": "Cloudy" },
+      { "dayOfWeek": "Thu", "highTemp": 28, "lowTemp": 20, "condition": "Clear" },
+      { "dayOfWeek": "Fri", "highTemp": 24, "lowTemp": 17, "condition": "Windy" },
+      { "dayOfWeek": "Sat", "highTemp": 26, "lowTemp": 18, "condition": "Sunny" }
+    ]
+  },
+  "Cape Town": {
+    "current": {
+      "city": "Cape Town",
+      "temperature": 20,
+      "condition": "Clear",
+      "humidity": 70,
+      "windSpeed": "25 km/h"
+    },
+    "forecast": [
+      { "dayOfWeek": "Today", "highTemp": 22, "lowTemp": 15, "condition": "Clear" },
+      { "dayOfWeek": "Mon", "highTemp": 20, "lowTemp": 14, "condition": "Cloudy" },
+      { "dayOfWeek": "Tue", "highTemp": 18, "lowTemp": 12, "condition": "Rainy" },
+      { "dayOfWeek": "Wed", "highTemp": 19, "lowTemp": 13, "condition": "Partly Cloudy" },
+      { "dayOfWeek": "Thu", "highTemp": 23, "lowTemp": 16, "condition": "Sunny" },
+      { "dayOfWeek": "Fri", "highTemp": 21, "lowTemp": 15, "condition": "Mist" },
+      { "dayOfWeek": "Sat", "highTemp": 24, "lowTemp": 17, "condition": "Clear" }
+    ]
+  },
+  "Durban": {
+    "current": {
+      "city": "Durban",
+      "temperature": 28,
+      "condition": "Sunny",
+      "humidity": 75,
+      "windSpeed": "10 km/h"
+    },
+    "forecast": [
+      { "dayOfWeek": "Today", "highTemp": 30, "lowTemp": 22, "condition": "Sunny" },
+      { "dayOfWeek": "Mon", "highTemp": 29, "lowTemp": 21, "condition": "Partly Cloudy" },
+      { "dayOfWeek": "Tue", "highTemp": 27, "lowTemp": 20, "condition": "Thunderstorm" },
+      { "dayOfWeek": "Wed", "highTemp": 28, "lowTemp": 21, "condition": "Showers" },
+      { "dayOfWeek": "Thu", "highTemp": 31, "lowTemp": 23, "condition": "Clear" },
+      { "dayOfWeek": "Fri", "highTemp": 29, "lowTemp": 22, "condition": "Sunny" },
+      { "dayOfWeek": "Sat", "highTemp": 30, "lowTemp": 23, "condition": "Clear" }
+    ]
+  }
+}
